@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formos</h1>
+    <form action="forms.html" method="post">
+      <div style="margin-bottom: 1em">
+        <label for="name">Vardas</label>
+        <input type="text" id="name" name="name" autocomplete="off" />
+      </div>
+      <div style="margin-bottom: 1em">
+        <label for="surname">Pavarde</label>
+        <input type="text" id="surname" name="surname" autocomplete="off" />
+      </div>
+      <div style="margin-bottom: 1em">
+        <label for="password">Slaptazodis</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" />
+      </div>
+      <div>
+        <input type="submit" value="Siusti" />
+      </div>
+    </form>
+    <h2>Daugiau formu</h2>
+    <table>
+      <tr>
+        <td><label for="">Vartotojo vardas</label></td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td><label for="">Pavarde</label></td>
+        <td><input type="text" /></td>
+      </tr>
+    </table>
+
+    <!-- Checkbox -->
+    <label for=""><input type="checkbox" name="" id="" />English</label>
+    <label for=""><input type="checkbox" name="" id="" />Russian</label>
+
+    <!-- Radio input -->
+    <label for="">Lithuanian</label>
+    <input type="radio" name="lang" id="" />
+    <label for="">Russian</label>
+    <input type="radio" name="lang" id="" />
+
+    <!-- Select input -->
+    <select name="" id="">
+      <option value="" selected>...</option>
+      <option value="">Facebook</option>
+      <option value="">Google</option>
+      <option value="">Instagram</option>
+    </select>
+
+    <!-- Comments -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+  </body>
+</html>
