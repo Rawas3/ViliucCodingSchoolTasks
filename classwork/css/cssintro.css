@@ -1,0 +1,19 @@
+h2 {
+  color: green;
+}
+
+body {
+  background-color: burlywood;
+}
+
+.paragraph1 {
+  color: blue;
+}
+
+.paragraph2 {
+  font-size: 20px;
+}
+
+#last {
+  font-size: 25px;
+}
