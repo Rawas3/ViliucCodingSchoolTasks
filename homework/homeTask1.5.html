@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <fieldset>
+          <legend>Jusu informacija</legend>
+          <table>
+            <tr>
+              <td><label for="firstname">Vardas:</label></td>
+              <td><input type="text" id="firstname" name="name" /></td>
+            </tr>
+            <tr>
+              <td><label for="lastname">Pavarde:</label></td>
+              <td><input type="text" id="lastname" name="lastname" /></td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Klausimai</legend>
+          <div>
+            <label for="sites">Kaip suzinojote apie mus?</label>
+            <select name="sites" id="sites">
+              <option value="">Facebook</option>
+              <option value="" selected>Google</option>
+              <option value="">Instagram</option>
+            </select>
+          </div>
+
+          <div style="margin-top: 20px">
+            <div>Ar aplankysite vel?</div>
+            <label for="">Taip</label>
+            <input type="radio" name="lang" id="" />
+            <label for="">Ne</label>
+            <input type="radio" name="lang" id="" />
+            <label for="">Galbut</label>
+            <input type="radio" name="lang" id="" />
+          </div>
+
+          <div style="margin-top: 20px">
+            <div>
+              <label for="opinion">Ka manote apie kursa?</label>
+            </div>
+            <textarea name="opinion" id="opinion" cols="80" rows="10" placeholder="Rasykite viska ka galvojote"></textarea>
+          </div>
+
+          <div style="margin-top: 20px">
+            <div>Pazymekite programavimo/zymejimo kalbas su kuriomis esate susipazine:</div>
+            <table>
+              <tr>
+                <td>
+                  <label for="selectLang"><input type="checkbox" name="selectLang" id="selectLang" />C#</label>
+                </td>
+                <td>
+                  <label for="selectLang"><input type="checkbox" name="selectLang" id="selectLang" />JAVA</label>
+                </td>
+                <td>
+                  <label for="selectLang"><input type="checkbox" name="selectLang" id="selectLang" />PHP</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="selectLang"><input type="checkbox" name="selectLang" id="selectLang" />HTML</label>
+                </td>
+                <td>
+                  <label for="selectLang"><input type="checkbox" name="selectLang" id="selectLang" />CSS</label>
+                </td>
+                <td>
+                  <label for="selectLang"><input type="checkbox" name="selectLang" id="selectLang" />JavaScript</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="selectLang"><input type="checkbox" name="selectLang" id="selectLang" />Python</label>
+                </td>
+                <td>
+                  <label for="selectLang"><input type="checkbox" name="selectLang" id="selectLang" />Ruby</label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div style="margin-top: 20px">
+            <input type="submit" value="Siusti" />
+          </div>
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>
