@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: silver;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+}
+
+nav > ul > li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav > ul > li > a {
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+a {
+  color: #000;
+  margin-right: 1rem;
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: color 0.2s linear;
+}
+
+a:hover {
+  color: #f26c06;
+}

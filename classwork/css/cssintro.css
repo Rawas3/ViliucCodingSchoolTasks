@@ -17,3 +17,48 @@ body {
 #last {
   font-size: 25px;
 }
+
+div > p {
+  font-size: 15px;
+  color: brown;
+  text-decoration: underline;
+}
+section p {
+  /* border-style: dotted;
+  border-color: blueviolet;
+  border-width: 2px;
+*/
+  border: 2px solid green;
+}
+
+[readonly] {
+  background-color: beige;
+}
+
+[type="password"] {
+  background-color: brown;
+  font-size: 14pt;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20pt;
+  font-weight: 700;
+  padding-left: 5px;
+}
+a:hover {
+  color: blueviolet;
+}
+
+nav a:first-child {
+  color: aqua;
+}
+
+tr:nth-child(2n) {
+  background-color: antiquewhite;
+}
+th:nth-child(2n),
+td:nth-child(2n) {
+  color: blue;
+}
