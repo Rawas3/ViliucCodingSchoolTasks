@@ -3,6 +3,30 @@ main {
   flex-wrap: wrap;
 }
 
-main > section {
+section {
   width: 50%;
+}
+
+article {
+  position: relative;
+}
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px -5px 5px silver;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+}
+.content > section {
+  width: 50%;
+  margin: 5px;
+}
+
+@media screen AND (max-width: 670px) {
+  section {
+    width: 100%;
+  }
 }
