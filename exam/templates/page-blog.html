@@ -28,7 +28,7 @@
                   <div class="icon mr-2 d-flex align-items-center">
                     <a class="nav_flag me-1"> <img src="../static/images/header/address.png" height="25" width="25" /></a>
                   </div>
-                  <span class="text">Antakalnio 28th Street, Vilnius</span>
+                  <span class="lang-address text">Antakalnio 28th Street, Vilnius</span>
                 </div>
                 <div class="col-md pr-4 logos">
                   <div class="icon mr-2 d-flex align-items-center">
@@ -43,9 +43,9 @@
                   <span class="text">+ 8 676 00111</span>
                 </div>
                 <div class="col-md d-flex topper align-items-center">
-                  <a class="nav_flag me-1" th:href="@{?lang=en}"> <img src="../static/images/header/flag_UK.png" height="20" width="24" /></a>
-                  <a class="nav_flag me-1" th:href="@{?lang=lt}"> <img src="../static/images/header/flag_LT.png" height="20" width="24" /></a>
-                  <a class="nav_flag me-2" th:href="@{?lang=ru}"> <img src="../static/images/header/flag_RU.png" height="20" width="24" /></a>
+                  <a class="nav_flag me-1 language" language="en" href="#en"> <img src="../static/images/header/flag_UK.png" height="20" width="24" /></a>
+                  <a class="nav_flag me-1 language" language="lt" href="#lt"> <img src="../static/images/header/flag_LT.png" height="20" width="24" /></a>
+                  <a class="nav_flag me-2 language" language="ru" href="#ru"> <img src="../static/images/header/flag_RU.png" height="20" width="24" /></a>
                 </div>
               </div>
             </div>
@@ -57,19 +57,19 @@
 
       <nav class="navbar navbar-expand-lg ftco_navbar bg-light">
         <div class="container d-flex align-items-center">
-          <h5 class="navbar-brand">Dogs</h5>
+          <h5 class="navbar-brand lang-headerbrand">Dogs</h5>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="oi oi-menu"></span>Menu</button>
 
           <div class="navbar-collapse collapse" id="ftco-nav">
             <ul class="navbar-nav d-inline-flex mr-auto ms-md-auto">
-              <li class="nav-item"><a class="nav-link" href="../templates/page-home.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="../templates/page-blog.html">Blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="../templates/page-blogAdd.html">Add blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link lang-headerhome" href="../templates/page-home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link lang-headerblog" href="../templates/page-blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link lang-headeraddBlog" href="../templates/page-blogAdd.html">Add blog</a></li>
+              <li class="nav-item"><a class="nav-link lang-headercontact" href="#">Contact</a></li>
             </ul>
 
             <form th:action="@{/logout}" method="post">
-              <button type="submit" class="button fs-6 me-2">Sign Out</button>
+              <button type="submit" class="button fs-6 me-2 lang-headerbuttonSignOut">Sign Out</button>
             </form>
           </div>
         </div>
@@ -318,5 +318,7 @@
         <p class="mb-0">© 2022 Dog House</p>
       </div>
     </footer>
+    <script src="../static/js/lang.js"></script>
+    <script src="../static/js/app.js"></script>
   </body>
 </html>
