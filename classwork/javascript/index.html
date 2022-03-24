@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+    <p></p>
+    <p class="second"></p>
+
+    <div>
+      <input type="text" id="password" />
+    </div>
+
+    <div>
+      <input type="button" value="OK" id="ok" />
+    </div>
+
+    <span> </span>
+
+    <script>
+      let number = 5;
+      number = 6;
+      let number2 = 4;
+      let numberThree = 8;
+
+      let result = number + number2 + numberThree;
+
+      console.log(result);
+      //   alert(result);
+
+      document.querySelector("h1").innerText = result;
+
+      let name = "Jonas";
+      let surname = "Jonaitis";
+
+      document.querySelector("p").innerText = name + " " + surname;
+      document.querySelector("p").innerHTML = "<b>" + name + " " + surname + "<b>";
+      document.querySelector("p").innerHTML = "<b>" + name + "</b> " + surname;
+      document.querySelector("p").innerHTML += " <b>" + name + "</b> " + surname;
+      document.querySelector(".second").innerText = "lorem";
+
+      document.querySelector("#password").value = "Query123";
+      let password = document.querySelector("#password").value;
+      document.querySelector("span").innerText = password;
+
+      document.querySelector("#ok").addEventListener("click", function () {
+        document.querySelector("body").style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>

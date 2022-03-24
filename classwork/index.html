@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="color" id="colorPicker" />
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et corporis consequatur vero inventore commodi? Hic impedit repudiandae harum! Voluptates vitae reprehenderit facere nulla ducimus at molestiae ut natus veniam! Corporis.</p>
+    <script src="/classwork/js/library.js"></script>
+    <script>
+      // let backgroundColor = "silver";
+      // changeBackgroundColor(backgroundColor);
+      document.querySelector("#colorPicker").addEventListener("change", function (event) {
+        changeBackgroundColor(event.target.value, "body");
+      });
+      changeBackgroundColor("red", "p");
+      changeBackgroundColor("blue", "body");
+      s;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

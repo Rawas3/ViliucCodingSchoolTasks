@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Studentai</h1>
+    <table>
+      <tr>
+        <th>El. nr.</th>
+        <th>Vardas</th>
+        <th>Pavarde</th>
+        <th>Amzius</th>
+      </tr>
+    </table>
+    <script>
+      let student1 = {
+        name: "Jonas",
+        surname: "Jonaitis",
+        age: 19,
+      };
+      console.log(student1);
+      console.log(student1.age);
+      console.log(student1.name);
+
+      let student2 = {
+        name: "Onute",
+        surname: "Onutele",
+        age: 21,
+      };
+
+      let sudentsExample = [
+        { name: "Jonas", surname: "Jonaitis", age: 19 },
+        { name: "Onute", surname: "Onutele", age: 21 },
+        { name: "Povilas", surname: "Povilaitis", age: 23 },
+      ];
+
+      let sudents = [student1, student2];
+
+      console.log(sudentsExample[1]);
+
+      for (let index = 0; index < sudentsExample.length; index++) {
+        const element = sudentsExample[index];
+        let template = "<tr><td>{{number}}</td><td>{{name}}</td><td>{{surname}}</td><td>{{age}}</td></tr>";
+
+        template = template.replace("{{number}}", index + 1);
+        template = template.replace("{{name}}", element.name);
+        template = template.replace("{{surname}}", element.surname);
+        template = template.replace("{{age}}", element.age);
+        document.querySelector("table").innerHTML += template;
+      }
+    </script>
+  </body>
+</html>
